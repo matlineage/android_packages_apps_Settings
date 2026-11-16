@@ -96,8 +96,7 @@ private class HibernationSwitchPresenter(context: Context, private val app: Appl
     private val appHibernationManager = context.appHibernationManager
     private val executor = Dispatchers.IO.asExecutor()
 
-    fun isAvailable() =
-        DeviceConfig.getBoolean(NAMESPACE_APP_HIBERNATION, PROPERTY_APP_HIBERNATION_ENABLED, true)
+    fun isAvailable() = false
 
     val isEligibleFlow = flow {
         if (app.isArchived) {
