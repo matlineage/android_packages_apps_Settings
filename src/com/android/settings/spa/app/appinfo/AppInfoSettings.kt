@@ -150,7 +150,6 @@ private fun AppInfoSettings(packageInfoPresenter: PackageInfoPresenter) {
 
         val appInfoProvider = remember(packageInfo) { AppInfoProvider(packageInfo) }
         val isHibernationSwitchEnabledStateFlow = MutableStateFlow(false)
-        val isContinueAcrossDevicesSwitchEnabledStateFlow = MutableStateFlow(false)
 
         appInfoProvider.AppInfo()
 
@@ -179,15 +178,6 @@ private fun AppInfoSettings(packageInfoPresenter: PackageInfoPresenter) {
             }
         }
 
-        if (android.companion.Flags.taskContinuity()) {
-            Category(title = stringResource(R.string.task_continuity_category)) {
-                ContinueAcrossDevicesSwitchPreference(
-                    app,
-                    isContinueAcrossDevicesSwitchEnabledStateFlow,
-                )
-            }
-        }
-            
         Category(title = stringResource(R.string.ai_assist_category)) {
             PersonalContextAppPreference(app)
             if (
