@@ -49,7 +49,7 @@ constructor(
     val isDevelopmentSettingsEnabledFlow: Flow<Boolean> =
         context.settingsGlobalBooleanFlow(
             name = Settings.Global.DEVELOPMENT_SETTINGS_ENABLED,
-            defaultValue = Build.IS_ENG,
+            defaultValue = true,
         ),
 ) : ComposePreferenceController(context, preferenceKey) {
 
