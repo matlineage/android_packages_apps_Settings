@@ -48,7 +48,7 @@ public class AdbAuthorizationTimeoutPreferenceController extends
     public void updateState(Preference preference) {
         final long authTimeout = Settings.Global.getLong(mContext.getContentResolver(),
                 Settings.Global.ADB_ALLOWED_CONNECTION_TIME,
-                Settings.Global.DEFAULT_ADB_ALLOWED_CONNECTION_TIME);
+                0L);
         // An authTimeout of 0 indicates this preference is enabled and adb authorizations will not
         // be automatically revoked.
         ((TwoStatePreference) mPreference).setChecked(authTimeout == 0);
