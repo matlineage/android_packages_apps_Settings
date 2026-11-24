@@ -174,7 +174,7 @@ public class MinimalismPreferenceController
 
     private int getCurrentMinimalismValue() {
         return Settings.Secure.getInt(mContext.getContentResolver(),
-                LOCK_SCREEN_NOTIFICATION_MINIMALISM, LS_MINIMALISM_ON);
+                LOCK_SCREEN_NOTIFICATION_MINIMALISM, LS_MINIMALISM_OFF);
     }
 
     private void refreshState(@Nullable Uri uri) {

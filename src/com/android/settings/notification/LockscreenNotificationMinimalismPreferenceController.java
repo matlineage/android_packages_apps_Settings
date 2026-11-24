@@ -45,7 +45,7 @@ public class LockscreenNotificationMinimalismPreferenceController
     @Override
     public boolean isChecked() {
         return Settings.Secure.getInt(mContext.getContentResolver(),
-                LOCK_SCREEN_NOTIFICATION_MINIMALISM, ON) == ON;
+                LOCK_SCREEN_NOTIFICATION_MINIMALISM, OFF) == ON;
     }
 
     @Override

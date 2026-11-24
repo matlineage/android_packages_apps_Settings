@@ -124,7 +124,7 @@ public class LockScreenNotificationShowViewedController extends TogglePreference
     private boolean lockScreenMinimalism() {
         if (!Flags.notificationMinimalism()) return false;
         return Settings.Secure.getInt(mContext.getContentResolver(),
-                LOCK_SCREEN_NOTIFICATION_MINIMALISM, LS_MINIMALISM_ON) == LS_MINIMALISM_ON;
+                LOCK_SCREEN_NOTIFICATION_MINIMALISM, LS_MINIMALISM_OFF) == LS_MINIMALISM_ON;
     }
 
     @Override
