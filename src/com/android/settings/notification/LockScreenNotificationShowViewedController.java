@@ -19,6 +19,7 @@ package com.android.settings.notification;
 import static android.provider.Settings.Secure.LOCK_SCREEN_NOTIFICATION_MINIMALISM;
 import static android.provider.Settings.Secure.LOCK_SCREEN_SHOW_ONLY_UNSEEN_NOTIFICATIONS;
 
+import static com.android.settings.notification.lockscreen.MinimalismPreferenceController.LS_MINIMALISM_OFF;
 import static com.android.settings.notification.lockscreen.MinimalismPreferenceController.LS_MINIMALISM_ON;
 
 import android.content.ContentResolver;
