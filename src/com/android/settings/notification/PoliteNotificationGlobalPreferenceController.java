@@ -46,7 +46,7 @@ public class PoliteNotificationGlobalPreferenceController extends TogglePreferen
     @Override
     public boolean isChecked() {
         return Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.NOTIFICATION_COOLDOWN_ENABLED, ON) == ON;
+                Settings.System.NOTIFICATION_COOLDOWN_ENABLED, OFF) == ON;
     }
 
     @Override
