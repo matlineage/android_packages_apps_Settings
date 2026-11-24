@@ -52,7 +52,7 @@ public class AutoRestrictionPreferenceController extends BasePreferenceControlle
                 Settings.Global.getInt(
                                 mContext.getContentResolver(),
                                 Settings.Global.APP_AUTO_RESTRICTION_ENABLED,
-                                ON)
+                                OFF)
                         == ON;
         ((TwoStatePreference) preference).setChecked(smartBatteryOn);
     }
