@@ -58,6 +58,15 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="mat_extras_font_category"
+        android:title="@string/mat_extras_font_category_title">
+
+        <lineageos.preference.LineagePartsPreference
+            android:key="font_settings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="mat_extras_advanced_restart_category"
         android:title="@string/mat_extras_advanced_restart_category_title">
 
