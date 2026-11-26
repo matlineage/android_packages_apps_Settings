@@ -1796,4 +1796,32 @@
         <item>Quick settings</item>
         <item>Lockscreen</item>
     </string-array>
+    <!-- Spectrum width options (kHz) -->
+    <string-array name="spectrum_width_entries">
+        <item>5 kHz</item>
+        <item>10 kHz</item>
+        <item>15 kHz</item>
+        <item>20 kHz</item>
+    </string-array>
+
+    <string-array name="spectrum_width_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Lock screen spectrum height options (dp) -->
+    <string-array name="spectrum_lockscreen_height_entries">
+        <item>48 dp</item>
+        <item>96 dp</item>
+        <item>144 dp</item>
+    </string-array>
+
+    <string-array name="spectrum_lockscreen_height_values" translatable="false">
+        <item>48</item>
+        <item>96</item>
+        <item>144</item>
+    </string-array>
+
 </resources>

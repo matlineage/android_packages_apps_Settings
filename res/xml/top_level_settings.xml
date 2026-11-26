@@ -164,6 +164,14 @@
             android:summary="@string/summary_placeholder"
             settings:highlightableMenuKey="@string/menu_key_about_device"
             settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.android.settings.MatExtrasSettings"
+            android:icon="@drawable/ic_homepage_mat_extras"
+            android:key="top_level_mat_extras"
+            android:order="-15"
+            android:title="@string/mat_extras_title"
+            android:summary="🔥🔥🔥"/>
     </PreferenceCategory>
 
     <PreferenceCategory

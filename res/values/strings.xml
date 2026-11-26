@@ -15590,4 +15590,24 @@
     <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
     <!-- Access HID end -->
+
+    <!-- Mat Extras -->
+    <string name="mat_extras_title">Mat extras</string>
+    <string name="mat_extras_spectrum_category_title">Spectrum</string>
+    <string name="mat_extras_spectrum_lockscreen_title">Spectrum on lock screen</string>
+    <string name="mat_extras_spectrum_lockscreen_summary">Show spectrum visualizer on lock screen</string>
+    <string name="mat_extras_spectrum_statusbar_title">Spectrum on status bar</string>
+    <string name="mat_extras_spectrum_statusbar_summary">Show spectrum visualizer on status bar</string>
+    <string name="mat_extras_spectrum_width_title">Spectrum width</string>
+    <string name="mat_extras_spectrum_width_summary">Maximum frequency drawn (%1$s kHz)</string>
+    <string name="mat_extras_spectrum_lockscreen_height_title">Lock screen spectrum height</string>
+    <string name="mat_extras_spectrum_lockscreen_height_summary">Lock screen spectrum height (%1$s dp)</string>
+    <string name="mat_extras_statusbar_icons_category_title">Status bar icons</string>
+    <string name="mat_extras_colored_statusbar_icons_title">Color status bar icons</string>
+    <string name="mat_extras_colored_statusbar_icons_summary">Show colored notification icons in status bar</string>
+    <string name="mat_extras_advanced_restart_category_title">Advanced restart</string>
+    <string name="mat_extras_advanced_restart_title">Advanced restart</string>
+    <string name="mat_extras_advanced_restart_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
+    <string name="mat_extras_advanced_restart_lockscreen_title">Advanced restart on lock screen</string>
+    <string name="mat_extras_advanced_restart_lockscreen_summary">Show advanced restart options on a secured lock screen</string>
 </resources>

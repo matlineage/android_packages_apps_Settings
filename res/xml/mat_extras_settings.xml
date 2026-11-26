@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:icon="@drawable/ic_mat_extras"
+    android:title="@string/mat_extras_title">
+
+    <PreferenceCategory
+        android:key="mat_extras_spectrum_category"
+        android:title="@string/mat_extras_spectrum_category_title">
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="spectrum_lockscreen"
+            android:title="@string/mat_extras_spectrum_lockscreen_title"
+            android:summary="@string/mat_extras_spectrum_lockscreen_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="spectrum_statusbar"
+            android:title="@string/mat_extras_spectrum_statusbar_title"
+            android:summary="@string/mat_extras_spectrum_statusbar_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="spectrum_width"
+            android:title="@string/mat_extras_spectrum_width_title"
+            android:summary="@string/mat_extras_spectrum_width_summary"
+            android:entries="@array/spectrum_width_entries"
+            android:entryValues="@array/spectrum_width_values"
+            android:defaultValue="15" />
+
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="spectrum_lockscreen_height"
+            android:title="@string/mat_extras_spectrum_lockscreen_height_title"
+            android:summary="@string/mat_extras_spectrum_lockscreen_height_summary"
+            android:entries="@array/spectrum_lockscreen_height_entries"
+            android:entryValues="@array/spectrum_lockscreen_height_values"
+            android:defaultValue="96" />
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="spectrum_use_mic"
+            android:title="@string/mat_extras_spectrum_use_mic_title"
+            android:summary="@string/mat_extras_spectrum_use_mic_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="mat_extras_statusbar_icons_category"
+        android:title="@string/mat_extras_statusbar_icons_category_title">
+
+        <lineageos.preference.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/mat_extras_colored_statusbar_icons_title"
+            android:summary="@string/mat_extras_colored_statusbar_icons_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="mat_extras_advanced_restart_category"
+        android:title="@string/mat_extras_advanced_restart_category_title">
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/mat_extras_advanced_restart_title"
+            android:summary="@string/mat_extras_advanced_restart_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="advanced_reboot_secured"
+            android:title="@string/mat_extras_advanced_restart_lockscreen_title"
+            android:summary="@string/mat_extras_advanced_restart_lockscreen_summary"
+            android:dependency="advanced_reboot"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
