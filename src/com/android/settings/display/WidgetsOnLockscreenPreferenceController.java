@@ -99,8 +99,7 @@ public class WidgetsOnLockscreenPreferenceController extends TogglePreferenceCon
 
     static int getEnabledDefault(Context context) {
         if (!Flags.glanceableHubV2()) {
-            // The default was just "1" (enabled) pre-hub_v2).
-            return 1;
+            return 0;
         }
 
         return context.getResources().getBoolean(
