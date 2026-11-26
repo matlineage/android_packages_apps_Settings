@@ -15602,6 +15602,8 @@
     <string name="mat_extras_spectrum_width_summary">Maximum frequency drawn (%1$s kHz)</string>
     <string name="mat_extras_spectrum_lockscreen_height_title">Lock screen spectrum height</string>
     <string name="mat_extras_spectrum_lockscreen_height_summary">Lock screen spectrum height (%1$s dp)</string>
+    <string name="mat_extras_spectrum_use_mic_title">Use microphone input</string>
+    <string name="mat_extras_spectrum_use_mic_summary">Use microphone input instead of media playback</string>
     <string name="mat_extras_statusbar_icons_category_title">Status bar icons</string>
     <string name="mat_extras_colored_statusbar_icons_title">Color status bar icons</string>
     <string name="mat_extras_colored_statusbar_icons_summary">Show colored notification icons in status bar</string>
